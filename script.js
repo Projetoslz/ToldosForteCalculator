@@ -20,7 +20,7 @@ function calculaCaida(num) {
 }
 
 function calculaMetragem(num) {
-  num = calculaCaida() * largura.value + 0.3;
+  num = calculaCaida() * largura.value;
   let numConvertido = num.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
 
   if (largura.value != false) {
