@@ -1,0 +1,154 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 123.58px - 40px);
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
+}
+
+.container__main {
+  display: flex;
+  gap: 100px;
+  /* background-color: #6785e0;
+  border-radius: 10px; */
+  /* width: 900px;
+  height: 500px; */
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.container__main-first {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main-first::before {
+  position: absolute;
+  margin-left: 200px;
+  content: "";
+  width: 5px;
+  height: 450px;
+  border-radius: 20px;
+  background-color: #e74c3c;
+  opacity: 0.5;
+}
+
+.label__input {
+  font-family: "Montserrat", sans-serif;
+  color: #414141;
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.input {
+  color: #e74c3c;
+  background-color: #d8d8d8;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  width: 127.25px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container__main-second {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main-secondLabel{
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+.textArea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.5rem;
+  width: 300px;
+  height: 30px;
+  color: green;
+  /* background-color: #d8d8d8; */
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+  resize: none;
+}
+
+.container__main-thirImg {
+  width: 250px;
+}
+
+
+@media(max-width: 575px) {
+
+
+  .main {
+    height: 100%;
+  }
+  .container__main{
+    background-image: url("../img/TOLDO.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 170px;
+    background-position-y: 140px;
+    margin-top: 20px;
+    align-items: start;
+    height: 681px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+  }
+
+   .container__main-first {
+   
+  }
+  
+  .container__main-first::before {
+    display: none;
+  }
+  
+
+  .container__main-second{
+    
+  }
+
+  .label__input {
+    margin-bottom: 5px;
+    justify-content: start;
+    font-size: 1rem;
+  }
+  
+  .input { 
+    font-size: 1rem;
+    padding: 7px;
+  }
+  
+
+  .container__main-thirImg {
+   display: none;
+    width: 150px;
+   
+  }
+
+  
+}

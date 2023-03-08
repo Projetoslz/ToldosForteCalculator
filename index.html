@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Toldo Forte</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__img" src="./img/logo NOVA PNG.png" alt="Logo da Empresa">
+  </header>
+
+  <main class="main">
+    <section class="container__main">
+
+      <section class="container__main-first">
+
+        <label class="label__input" for="largura">Largura</label>
+        <input class="input" id="largura" type="number" name="largura" value="" required>
+
+        <label class="label__input" for="avanco">Avanço</label>
+        <input class="input " id="avanco" type="number" name="avanco" value="" required>
+
+        <label class="label__input" for="valor">Valor R$</label>
+        <input class="input " id="valor" type="number" name="valor" value="" required>
+
+        <button class="button" onclick="ativaFucao()">Calcular</button>
+        <button class="button" onclick="limpar()">Limpar</button>
+
+      </section>
+
+      <section class="container__main-second">
+
+        <label class="container__main-secondLabel" for="name">Tamanho da caída com acréscimo:</label>
+        <textarea class="textArea" name="name" id="textArea1" disabled></textarea>
+
+        <label class="container__main-secondLabel" for="name">Metros quadrados com acréscimo:</label>
+        <textarea class="textArea" name="name" id="textArea2" disabled></textarea>
+
+        <label class="container__main-secondLabel" for="name">Metros de lona necessários para a fabricação:</label>
+        <textarea class="textArea" name="name" id="textArea3" disabled></textarea>
+
+        <label class="container__main-secondLabel" for="name">Valor do Toldo:</label>
+        <textarea class="textArea" name="name" id="textArea4" disabled></textarea>
+
+        <section class="container__main-third">
+          <img class="container__main-thirImg" src="./img/TOLDO.png" alt="foto do toldo">
+        </section>
+      </section>
+
+
+    </section>
+
+  </main>
+  
+  <footer class="footer">
+    <a href="mailto:toldosfort@email.com"><img src="./img/gmail.png" alt="icone gmail"></a>
+    <a href="https://www.instagram.com/toldosforte_/"><img src="./img/instagram.png" alt="icone instagram"></a>
+    <a href="https://www.facebook.com/toldosforte"><img src="./img/facebook.png" alt="icone facebook"></a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

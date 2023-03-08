@@ -1,0 +1,11 @@
+/* header */
+@import "./header.css";
+
+/* body */
+@import "./main.css";
+
+/* footer */
+@import "./footer.css";
+
+/* componentes */
+@import "./componentes/button.css";

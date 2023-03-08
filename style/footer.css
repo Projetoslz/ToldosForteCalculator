@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+  justify-content: center;
+  background: #6285ec;
+}
+
+.footer img {
+  width: 30px;
+}
+
+
+@media(max-width : 575px) {
+  .footer{
+    display: none;
+  }
+
+}
