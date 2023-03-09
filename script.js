@@ -43,7 +43,7 @@ function lonaFabricacao(num) {
 }
 
 function calculaValorPorM2(num) {
-  num = (calculaMetragem() * valorM2.value).toFixed(2);
+  num = (textArea1.value* largura.value * valorM2.value).toFixed(2);
   let valorConvertido = parseFloat(num);
   textArea4.value = valorConvertido.toLocaleString("pt-BR", {
     style: "currency",
