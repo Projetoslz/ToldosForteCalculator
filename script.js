@@ -32,13 +32,15 @@ function calculaMetragem(num) {
 
 function lonaFabricacao(num) {
   num = calculaCaida();
-  let mestrosDeLona = 0;
+  let larguraConvertida = Number(largura.value)
+  let mestrosDeLona = num;
 
-  for (i = 1.4; i < Number(largura.value); i++) {
+  for (i = 1.4; i < larguraConvertida; i = i + 1.40) {
     mestrosDeLona = mestrosDeLona + num;
+    console.log(i)
   }
 
-  let valorComAcrescimo = mestrosDeLona + 0.5;
+  let valorComAcrescimo = mestrosDeLona + 0.50;
   textArea3.value = valorComAcrescimo.toFixed(2) + "m"
 }
 
