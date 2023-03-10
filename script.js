@@ -32,7 +32,7 @@ function calculaMetragem(num) {
 
 function lonaFabricacao(num) {
   num = calculaCaida();
-  let mestrosDeLona = num;
+  let mestrosDeLona = 0;
 
   for (i = 1.4; i < largura.value; i++) {
     mestrosDeLona = mestrosDeLona + num;
